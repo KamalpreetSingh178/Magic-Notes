@@ -90,7 +90,7 @@ search.addEventListener("input",function(){
     //Going through each Note
     let noteCards=document.getElementsByClassName("noteCard");
     Array.from(noteCards).forEach(function(element){
-        let cardTxt=element.getElementsByClassName("p")[0].innerText;
+        let cardTxt=element.getElementsByTagName("p")[0].innerText;
         //console.log(cardTxt);
         if(cardTxt.includes(inputVal)){//If Card includes the text searched
             element.style.display="block";
